@@ -4,8 +4,6 @@
 
 <style>
 /* Home section Start */
-
-
 .banner-content{
   text-align: center;
   /* padding-top: 10px; */
@@ -149,8 +147,8 @@
              </div>
              <div class="col-lg-5">
                 <div class="section-disc">
-                   Aperiam sociosqu urna praesent, tristique, corrupti condimentum asperiores platea ipsum ad
-                   arcu. Nostrud. Aut nostrum, ornare quas provident laoreet nesciunt.
+                  Explore Tanzania's top-notch destinations for unforgettable adventures, 
+                  from wildlife safaris to pristine beaches. Your journey begins with us!
                 </div>
              </div>
           </div>
@@ -246,6 +244,7 @@
  </section>
  <!-- Home packages section html start -->
  <section class="package-section">
+   @if($latestPackages->count()>0)
     <div class="container">
        <div class="section-heading text-center">
           <div class="row">
@@ -316,6 +315,7 @@
           </div>
        </div>
     </div>
+    @endif
  </section>
  <!-- packages html end -->
  <!-- Home callback section html start -->
@@ -336,8 +336,8 @@
                 <div class="section-heading section-heading-white">
                    <h5 class="dash-style">CALLBACK FOR MORE</h5>
                    <h2>REMEMBER US!!</h2>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
-                      ullamcorper mattis, pulvinar dapibus leo. Eaque adipiscing, luctus eleifend.</p>
+                   <p>Explore Tanzania with Go Tanzania Adventure.
+                      Create unforgettable memories with us as you discover the beauty and culture of this amazing destination.</p>
                 </div>
                 <div class="callback-counter-wrap">
                    <div class="counter-item">
@@ -418,9 +418,8 @@
              <div class="col-lg-8 offset-lg-2">
                 <h5 class="dash-style">TRAVEL BY ACTIVITY</h5>
                 <h2>ADVENTURE & ACTIVITY</h2>
-                <p>Mollit voluptatem perspiciatis convallis elementum corporis quo veritatis aliquid blandit,
-                   blandit torquent, odit placeat. Adipiscing repudiandae eius cursus? Nostrum magnis maxime
-                   curae placeat.</p>
+                <p>Discover untamed wilderness, conquer towering peaks, 
+                  and embark on thrilling safaris with Go Tanzania Adventure. Your journey begins here.</p>
              </div>
           </div>
        </div>
@@ -436,7 +435,7 @@
                    <h4>
                       <a href="#">Adventure</a>
                    </h4>
-                   <p>15 Destination</p>
+                   <p>{{15}} Destination</p>
                 </div>
              </div>
           </div>
@@ -451,7 +450,7 @@
                    <h4>
                       <a href="#">Trekking</a>
                    </h4>
-                   <p>12 Destination</p>
+                   <p>{{12}} Destination</p>
                 </div>
              </div>
           </div>
@@ -466,7 +465,7 @@
                    <h4>
                       <a href="#">Camp Fire</a>
                    </h4>
-                   <p>7 Destination</p>
+                   <p>{{7}} Destination</p>
                 </div>
              </div>
           </div>
@@ -481,7 +480,7 @@
                    <h4>
                       <a href="#">Off Road</a>
                    </h4>
-                   <p>15 Destination</p>
+                   <p>{{15}} Destination</p>
                 </div>
              </div>
           </div>
@@ -527,9 +526,8 @@
              <div class="col-lg-8 offset-lg-2">
                 <h5 class="dash-style">TRAVEL OFFER & DISCOUNT</h5>
                 <h2>SPECIAL TRAVEL OFFER</h2>
-                <p>Mollit voluptatem perspiciatis convallis elementum corporis quo veritatis aliquid blandit,
-                   blandit torquent, odit placeat. Adipiscing repudiandae eius cursus? Nostrum magnis maxime
-                   curae placeat.</p>
+                <p>Explore Tanzania's breathtaking landscapes and wildlife with our special travel offer. 
+                  Experience adventure like never before with Go Tanzania Adventure Tourism.</p>
              </div>
           </div>
        </div>
@@ -674,9 +672,8 @@
                       <input type="submit" name="signup" value="SIGN UP NOW!">
                    </form>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
-                   ullamcorper mattis, pulvinar dapibus leo. Eaque adipiscing, luctus eleifend temporibus
-                   occaecat luctus eleifend tempo ribus.</p>
+                <p>Embark on an unforgettable adventure with Go Tanzania! Book now and enjoy our holiday special, 
+                  25% off your dream safari experience. Don't miss out! sign up today.</p>
              </div>
           </div>
        </div>
@@ -691,9 +688,8 @@
              <div class="col-lg-8 offset-lg-2">
                 <h5 class="dash-style">FROM OUR BLOG</h5>
                 <h2>OUR RECENT POSTS</h2>
-                <p>Mollit voluptatem perspiciatis convallis elementum corporis quo veritatis aliquid blandit,
-                   blandit torquent, odit placeat. Adipiscing repudiandae eius cursus? Nostrum magnis maxime
-                   curae placeat.</p>
+                <p>Explore our recent posts to discover thrilling adventures, breathtaking landscapes,
+                   and unique experiences in Tanzania. Your unforgettable journey begins here!</p>
              </div>
           </div>
        </div>

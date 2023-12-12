@@ -20,9 +20,6 @@ class PackageController extends Controller
 
         return view('admin.packages.index', compact(['packages', 'status']));
     }
-
-
-
     /**
      * Show the form for creating a new resource.
      */
@@ -44,14 +41,14 @@ class PackageController extends Controller
         //  dd($request);
 
         $request->validate([
-            'title' => 'required|unique|min:30|max:100',
+            'title' => 'required|min:10|max:100',
             'category' => 'required |numeric',
             'description' => 'required|min:150',
             'size' => 'required |numeric',
             'days' => 'required',
             'nights' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'images.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048|dimensions:width=1200,height=700',
+            'images.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048|dimensions:width=1200,height=700',
             'regular_price' => 'required',
             'region' => 'required',
             'destination' => 'required',
@@ -154,14 +151,14 @@ class PackageController extends Controller
 
         // Retrieve the selected type_id from the form input
         $request->validate([
-            'title' => 'required|unique|min:30|max:100',
+            'title' => 'required|min:10|max:100',
             'category' => 'required |numeric',
             'description' => 'required|min:150',
             'size' => 'required |numeric',
             'days' => 'required',
             'nights' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'images.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048|dimensions:width=1200,height=700',
+            'images.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048|dimensions:width=1200,height=700',
             'regular_price' => 'required',
             'region' => 'required',
             'destination' => 'required',
@@ -228,9 +225,6 @@ class PackageController extends Controller
 
         return redirect(url('admin/packages/' . $package->status));
     }
-
-
-
     /**
      * Remove the specified resource from storage.
      */
