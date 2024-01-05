@@ -147,11 +147,17 @@
                                 <li><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
                                 <li><a href="#"><i class="fas fa-user-tie"></i>Profile</a></li>
                                 <li><a href="#"><i class="fas fa-key"></i>Password</a></li>
-                                <li><a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+                                <li>
+                                    <form action="{{route('logout')}}" method="POST">
+                                        @csrf
+                                        <i class="fas fa-sign-out-alt"></i>
+                                        <button type="submit" style="outline:none; border:none; background:none;" class="btn">Logout</li>
+                                    </form>
+                                    
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div>  
             </div>
             <div class="dashboard-navigation">
                 <!-- Responsive Navigation Trigger -->
@@ -202,9 +208,13 @@
                                         &amp; Enquiry</a></li>
                                 <li><a href="db-wishlist.html" role="menuitem"><i class="far fa-heart"></i>Wishlist</a>
                                 </li>
-                                <li><a href="db-comment.html" role="menuitem"><i
-                                            class="fas fa-comments"></i>Comments</a></li>
-                                <li><a href="login.html" role="menuitem"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                                <li><a href="db-comment.html" role="menuitem"><i class="fas fa-comments"></i>Comments</a></li>
+                                <li>
+                                    <form action="{{route('logout')}}" method="post" >
+                                        @csrf
+                                        <i class="fas fa-sign-out-alt"></i> 
+                                        <button style="outline:none; border:none; background:none;" type="submit" class="btn text-white">Logout</button>
+                                    </form>
                                 </li>
                             </ul>
                         </div>
@@ -217,7 +227,7 @@
             </div>
             <!-- Copyrights -->
             <div class="copyrights">
-                Copyright © 2021 Travele. All rights reserveds.
+                Copyright &copy; {{now()->year}}  {{ str_replace("_"," ",config('app.name', 'Go Tanzania Adventure')) }}. All rights reserveds.
             </div>
         </div>
         <!-- Dashboard / End -->

@@ -11,15 +11,14 @@ class PackageController extends Controller
 {
 
     /**
-     * Display a listing of the resource.
+     * Instantiate a new PackageController instance.
      */
-
-    public function index($status)
+    public function __construct()
     {
-        $packages = Package::latest()->where('status', $status)->paginate(5);
 
-        return view('admin.packages.index', compact(['packages', 'status']));
+        $this->middleware('auth');
     }
+
 
 
 
@@ -32,7 +31,7 @@ class PackageController extends Controller
 
         $categories = Category::all();
 
-        return view('admin.packages.create-edit', compact(['categories', 'isEdit']));
+        return view('admin.package.create-edit', compact(['categories', 'isEdit']));
     }
 
     /**
@@ -117,17 +116,18 @@ class PackageController extends Controller
 
         $package->save();
 
-        return redirect(url('admin/packages/' . $package->status));
+        return redirect(url('admin/package/' . $package->status));
     }
 
 
     /**
      * Display the specified resource.
      */
-    public function show()
+    public function show($status)
     {
+        $packages = Package::latest()->where('status', $status)->paginate(5);
 
-        //
+        return view('admin.package.show', compact(['packages', 'status']));
     }
 
     /**
@@ -228,7 +228,6 @@ class PackageController extends Controller
 
         return redirect(url('admin/packages/' . $package->status));
     }
-
 
 
     /**
