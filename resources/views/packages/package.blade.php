@@ -1,6 +1,7 @@
 @extends('layout.app') <!-- Extend your app's layout if applicable -->
 
 @section('content')
+
  <!-- Inner Banner html start-->
  <section class="inner-banner-wrap">
    <div class="inner-baner-container" style="background-image: url({{asset('gta/images/slider-banner-4.jpg')}});">
@@ -18,9 +19,9 @@
       <div class="row">
          <div class="col-lg-8">
             <div class="single-tour-inner">
-               <h2>EXPERIENCE THE NATURAL BEAUTY OF ISLAND</h2>
+               <h2>{{$package->title}}</h2>
                <figure class="feature-image">
-                  <img src="{{asset('gta/images/img27.jpg')}}" alt="">
+                  <img src="{{($package->image)?asset('storage/'.$package->image):asset('images/no-image.png')}}" alt="Package Image">
                   <div class="package-meta text-center">
                      <ul>
                         <li>
@@ -325,7 +326,7 @@
                   <p>Mollit voluptatem perspiciatis convallis elementum corporis quo veritatis aliquid blandit, blandit torquent, odit placeat. </p>
                   <a href="#" class="button-primary">GET A QUOTE</a>
                </div>
-               <div class="travel-package-content text-center" style="background-image: url(assets/images/img11.jpg);">
+               <div class="gta-package-content text-center" style="background-image: url({{asset('gta/images/img11.jpg')}});">
                   <h5>MORE PACKAGES</h5>
                   <h3>OTHER TRAVEL PACKAGES</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus.</p>

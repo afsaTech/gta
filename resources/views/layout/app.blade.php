@@ -83,8 +83,8 @@
                <div class="site-identity">
                   <h1 class="site-title">
                      <a href="{{url('/')}}">
-                        <img class="white-logo" src="{{asset('gta/images/logo.png')}}" alt="logo">
-                        <img class="black-logo" src="{{asset('gta/images/logo.png')}}" alt="logo">
+                        <img class="white-logo" src="{{asset('gta/images/logo.png')}}" alt="logo" height="80" width="80">
+                        <img class="black-logo" src="{{asset('gta/images/logo.png')}}" alt="logo" height="80" width="80">
                        {{-- <span class="white-logo">{{ str_replace("_"," ",config('app.name', 'Go Tanzania Adventure')) }}</span>  --}}
                        {{-- <span class="black-logo">{{ str_replace("_"," ",config('app.name', 'Go Tanzania Adventure')) }}</span>  --}}
                   </h1>
@@ -154,7 +154,7 @@
          <div class="top-footer">
             <div class="container">
                <div class="row">
-                  <div class="col-lg-3 col-md-6">
+                  <div class="col-lg-4 col-md-6">
                      <aside class="widget widget_text">
                         <h3 class="widget-title">
                            {{ str_replace("_"," ",config('app.name', 'Go Tanzania Adventure')) }}
@@ -172,7 +172,7 @@
                         </div>
                      </aside>
                   </div>
-                  <div class="col-lg-3 col-md-6">
+                  <div class="col-lg-4 col-md-6">
                      <aside class="widget widget_text">
                         <h3 class="widget-title">CONTACT INFORMATION</h3>
                         <div class="textwidget widget-text">
@@ -198,7 +198,7 @@
                         </div>
                      </aside>
                   </div>
-                  <div class="col-lg-3 col-md-6">
+                  {{-- <div class="col-lg-3 col-md-6">
                      <aside class="widget widget_recent_post">
                         <h3 class="widget-title">Latest Post</h3>
                         <ul>
@@ -230,8 +230,8 @@
                            </li>
                         </ul>
                      </aside>
-                  </div>
-                  <div class="col-lg-3 col-md-6">
+                  </div> --}}
+                  <div class="col-lg-4 col-md-6">
                      <aside class="widget widget_newslatter">
                         <h3 class="widget-title">SUBSCRIBE US</h3>
                         <div class="widget-text">
