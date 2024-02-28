@@ -163,11 +163,11 @@
                             <img src="{{asset('gta/images/img1.jpg')}}" alt="">
                          </figure>
                          <div class="meta-cat bg-meta-cat">
-                            <a href="#">THAILAND</a>
+                            <a href="#">NGORONGORO</a>
                          </div>
                          <div class="desti-content">
                             <h3>
-                               <a href="#">Disney Land</a>
+                               <a href="#">Ngorongoro Creater</a>
                             </h3>
                             <div class="rating-start" title="Rated 5 out of 4">
                                <span style="width: 53%"></span>
@@ -181,11 +181,11 @@
                             <img src="{{asset('gta/images/img2.jpg')}}" alt="">
                          </figure>
                          <div class="meta-cat bg-meta-cat">
-                            <a href="#">NORWAY</a>
+                            <a href="#">DODOMA</a>
                          </div>
                          <div class="desti-content">
                             <h3>
-                               <a href="#">Besseggen Ridge</a>
+                               <a href="#">Capital City</a>
                             </h3>
                             <div class="rating-start" title="Rated 5 out of 5">
                                <span style="width: 100%"></span>
@@ -203,11 +203,11 @@
                             <img src="{{asset('gta/images/img3.jpg')}}" alt="">
                          </figure>
                          <div class="meta-cat bg-meta-cat">
-                            <a href="#">NEW ZEALAND</a>
+                            <a href="#">MIKUMI</a>
                          </div>
                          <div class="desti-content">
                             <h3>
-                               <a href="#">Oxolotan City</a>
+                               <a href="#">National Park</a>
                             </h3>
                             <div class="rating-start" title="Rated 5 out of 5">
                                <span style="width: 100%"></span>
@@ -221,11 +221,11 @@
                             <img src="{{asset('gta/images/img4.jpg')}}" alt="">
                          </figure>
                          <div class="meta-cat bg-meta-cat">
-                            <a href="#">SINGAPORE</a>
+                            <a href="#">KILIMANJARO</a>
                          </div>
                          <div class="desti-content">
                             <h3>
-                               <a href="#">Marina Bay Sand City</a>
+                               <a href="#">The fourth prominant peak on Earth</a>
                             </h3>
                             <div class="rating-start" title="Rated 5 out of 4">
                                <span style="width: 60%"></span>

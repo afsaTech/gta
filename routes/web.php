@@ -56,6 +56,7 @@ Route::get('/admin/pages', function () {
       PACKAGE RESOURCE
     -------------------------------------------------*/
 Route::resource('Packages', PackageController::class);
+
 Route::get('/admin/packages/{status}', [PackageController::class, 'show'])->name('packageStatus');
 
 //Display admin Dashboard route

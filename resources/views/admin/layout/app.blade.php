@@ -170,8 +170,8 @@
                         <div id="navigation" class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu"
                             style="display: none;">
                             <ul>
-                                <li class="active-menu"><a href="{{url('/admin')}}" role="menuitem"><i
-                                            class="far fa-chart-bar"></i> Dashboard</a></li>
+                                <li class="active-menu"><a href="{{route('dashboard')}}" role="menuitem">
+                                    <i class="far fa-chart-bar"></i> Dashboard</a></li>
                                 <li class="slicknav_collapsed slicknav_parent"><a href="#" role="menuitem"
                                         aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row"
                                         style="outline: none;"><a><i class="fas fa-user"></i>Users</a>
