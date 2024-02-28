@@ -22,12 +22,14 @@ use App\Http\Controllers\PackageController;
 /* -----------------------------------------------
     GTA WEBSITE LANDING PAGE ROUTE 
   -------------------------------------------------*/
-
 Route::get('/', function () {
-  $latestPackages = Package::where('status', 'active')->where('is_popular', 'on')->take(3)->get();
+  $latestPackages=Package::where('status', 'active')->where('is_popular','on')->take(3)->get();
 
-  return view('welcome', compact(['latestPackages']));
+  $discountedPackages=Package::where('discount',true)->latest()->take(3)->get();
+
+  return view('welcome', compact(['latestPackages','discountedPackages']));
 });
+
 
 /* -----------------------------------------------
     ROUTE TO SHOW ALL ACTIVE PACKAGES 
