@@ -163,11 +163,11 @@
                             <img src="{{asset('gta/images/img1.jpg')}}" alt="">
                          </figure>
                          <div class="meta-cat bg-meta-cat">
-                            <a href="#">THAILAND</a>
+                            <a href="#">NGORONGORO</a>
                          </div>
                          <div class="desti-content">
                             <h3>
-                               <a href="#">Disney Land</a>
+                               <a href="#">Ngorongoro Creater</a>
                             </h3>
                             <div class="rating-start" title="Rated 5 out of 4">
                                <span style="width: 53%"></span>
@@ -181,11 +181,11 @@
                             <img src="{{asset('gta/images/img2.jpg')}}" alt="">
                          </figure>
                          <div class="meta-cat bg-meta-cat">
-                            <a href="#">NORWAY</a>
+                            <a href="#">DODOMA</a>
                          </div>
                          <div class="desti-content">
                             <h3>
-                               <a href="#">Besseggen Ridge</a>
+                               <a href="#">Capital City</a>
                             </h3>
                             <div class="rating-start" title="Rated 5 out of 5">
                                <span style="width: 100%"></span>
@@ -203,11 +203,11 @@
                             <img src="{{asset('gta/images/img3.jpg')}}" alt="">
                          </figure>
                          <div class="meta-cat bg-meta-cat">
-                            <a href="#">NEW ZEALAND</a>
+                            <a href="#">MIKUMI</a>
                          </div>
                          <div class="desti-content">
                             <h3>
-                               <a href="#">Oxolotan City</a>
+                               <a href="#">National Park</a>
                             </h3>
                             <div class="rating-start" title="Rated 5 out of 5">
                                <span style="width: 100%"></span>
@@ -221,11 +221,11 @@
                             <img src="{{asset('gta/images/img4.jpg')}}" alt="">
                          </figure>
                          <div class="meta-cat bg-meta-cat">
-                            <a href="#">SINGAPORE</a>
+                            <a href="#">KILIMANJARO</a>
                          </div>
                          <div class="desti-content">
                             <h3>
-                               <a href="#">Marina Bay Sand City</a>
+                               <a href="#">The fourth prominant peak on Earth</a>
                             </h3>
                             <div class="rating-start" title="Rated 5 out of 4">
                                <span style="width: 60%"></span>
@@ -346,7 +346,7 @@
                       </div>
                       <div class="counter-content">
                          <span class="counter-no">
-                            <span class="counter">500</span>K+
+                            <span class="counter">0</span>
                          </span>
                          <span class="counter-text">
                             Satisfied Clients
@@ -359,10 +359,10 @@
                       </div>
                       <div class="counter-content">
                          <span class="counter-no">
-                            <span class="counter">250</span>K+
+                            <span class="counter">0</span>
                          </span>
                          <span class="counter-text">
-                            Satisfied Clients
+                            Awards
                          </span>
                       </div>
                    </div>
@@ -372,10 +372,10 @@
                       </div>
                       <div class="counter-content">
                          <span class="counter-no">
-                            <span class="counter">15</span>K+
+                            <span class="counter">0</span>
                          </span>
                          <span class="counter-text">
-                            Satisfied Clients
+                            New Clients
                          </span>
                       </div>
                    </div>
@@ -385,10 +385,10 @@
                       </div>
                       <div class="counter-content">
                          <span class="counter-no">
-                            <span class="counter">10</span>K+
+                            <span class="counter">0</span>
                          </span>
                          <span class="counter-text">
-                            Satisfied Clients
+                            Visited Sites
                          </span>
                       </div>
                    </div>
@@ -435,7 +435,7 @@
                    <h4>
                       <a href="#">Adventure</a>
                    </h4>
-                   <p>{{15}} Destination</p>
+                   <p>{{0}} Destination</p>
                 </div>
              </div>
           </div>
@@ -450,7 +450,7 @@
                    <h4>
                       <a href="#">Trekking</a>
                    </h4>
-                   <p>{{12}} Destination</p>
+                   <p>{{0}} Destination</p>
                 </div>
              </div>
           </div>
@@ -465,7 +465,7 @@
                    <h4>
                       <a href="#">Camp Fire</a>
                    </h4>
-                   <p>{{7}} Destination</p>
+                   <p>{{0}} Destination</p>
                 </div>
              </div>
           </div>
@@ -480,7 +480,7 @@
                    <h4>
                       <a href="#">Off Road</a>
                    </h4>
-                   <p>{{15}} Destination</p>
+                   <p>{{0}} Destination</p>
                 </div>
              </div>
           </div>
@@ -510,7 +510,7 @@
                    <h4>
                       <a href="#">Exploring</a>
                    </h4>
-                   <p>25 Destination</p>
+                   <p>{{0}} Destination</p>
                 </div>
              </div>
           </div>
@@ -533,81 +533,34 @@
        </div>
        <div class="special-inner">
           <div class="row">
-             <div class="col-md-6 col-lg-4">
-                <div class="special-item">
-                   <figure class="special-img">
-                      <img src="{{asset('gta/images/img9.jpg')}}" alt="">
-                   </figure>
-                   <div class="badge-dis">
-                      <span>
-                         <strong>20%</strong>
-                      </span>
-                   </div>
-                   <div class="special-content">
-                      <div class="meta-cat">
-                         <a href="#">CANADA</a>
-                      </div>
-                      <h3>
-                         <a href="#">Experience the natural beauty of glacier</a>
-                      </h3>
-                      <div class="package-price">
-                         Price:
-                         <del>$1500</del>
-                         <ins>$1200</ins>
-                      </div>
-                   </div>
-                </div>
-             </div>
-             <div class="col-md-6 col-lg-4">
-                <div class="special-item">
-                   <figure class="special-img">
-                      <img src="{{asset('gta/images/img10.jpg')}}" alt="">
-                   </figure>
-                   <div class="badge-dis">
-                      <span>
-                         <strong>15%</strong>
-                      </span>
-                   </div>
-                   <div class="special-content">
-                      <div class="meta-cat">
-                         <a href="#">NEW ZEALAND</a>
-                      </div>
-                      <h3>
-                         <a href="#">Trekking to the mountain camp site</a>
-                      </h3>
-                      <div class="package-price">
-                         Price:
-                         <del>$1300</del>
-                         <ins>$1105</ins>
-                      </div>
-                   </div>
-                </div>
-             </div>
-             <div class="col-md-6 col-lg-4">
-                <div class="special-item">
-                   <figure class="special-img">
-                      <img src="{{asset('gta/images/img11.jpg')}}" alt="">
-                   </figure>
-                   <div class="badge-dis">
-                      <span>
-                         <strong>15%</strong>
-                      </span>
-                   </div>
-                   <div class="special-content">
-                      <div class="meta-cat">
-                         <a href="#">MALAYSIA</a>
-                      </div>
-                      <h3>
-                         <a href="#">Sunset view of beautiful lakeside city</a>
-                      </h3>
-                      <div class="package-price">
-                         Price:
-                         <del>$1800</del>
-                         <ins>$1476</ins>
-                      </div>
-                   </div>
-                </div>
-             </div>
+            @foreach ($discountedPackages as $discounted_package)
+            <div class="col-md-6 col-lg-4">
+               <div class="special-item">
+                  <figure class="special-img">
+                     <img src="{{asset('gta/images/img9.jpg')}}" alt="">
+                  </figure>
+                  <div class="badge-dis">
+                     <span>
+                        <strong>{{$discounted_package->discount}}%</strong>
+                     </span>
+                  </div>
+                  <div class="special-content">
+                     <div class="meta-cat">
+                        <a href="#">{{$discounted_package->destination}}</a>
+                     </div>
+                     <h3>
+                        <a href="#">Experience the natural beauty of glacier</a>
+                     </h3>
+                     <div style="font-size: 14px;color:white">
+                        Price:
+                        <del>@money($discounted_package->regular_price)</del>
+                        <ins>@money($discounted_package->regular_price*$discounted_package->discount)</ins>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            @endforeach
+             
           </div>
        </div>
     </div>

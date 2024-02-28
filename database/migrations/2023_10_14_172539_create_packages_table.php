@@ -22,7 +22,7 @@ return new class extends Migration
             $table->integer('nights'); // Duration: End date)
             $table->decimal('regular_price', 10, 2); // Regular Price: The cost of the package per person
             $table->decimal('sales_price', 10, 2)->nullable();
-            $table->decimal('discount', 10, 2)->nullable(); 
+            $table->decimal('discount', 10, 2)->nullable();
             $table->string('region');
             $table->string('destination'); //Location: The location where the package ends
             $table->date('date');
