@@ -656,14 +656,14 @@
                 </figure>
                 <div class="entry-content">
                    <h3>
-                      <a href="#">Life is a beautiful journey not a destination</a>
+                      <a href="#">Tanzania most femous and great bussines City</a>
                    </h3>
                    <div class="entry-meta">
                       <span class="byline">
-                         <a href="#">Demoteam</a>
+                         <a href="#">Dsm</a>
                       </span>
                       <span class="posted-on">
-                         <a href="#">August 17, 2021</a>
+                         <a href="#">March 03, 2024</a>
                       </span>
                       <span class="comments-link">
                          <a href="#">No Comments</a>
@@ -681,14 +681,14 @@
                 </figure>
                 <div class="entry-content">
                    <h3>
-                      <a href="#">Take only memories, leave only footprints</a>
+                      <a href="#">Experience the tree climbing Lions</a>
                    </h3>
                    <div class="entry-meta">
                       <span class="byline">
-                         <a href="#">Demoteam</a>
+                         <a href="#">Now Serengeti</a>
                       </span>
                       <span class="posted-on">
-                         <a href="#">August 17, 2021</a>
+                         <a href="#">March 01, 2024</a>
                       </span>
                       <span class="comments-link">
                          <a href="#">No Comments</a>
@@ -706,14 +706,14 @@
                 </figure>
                 <div class="entry-content">
                    <h3>
-                      <a href="#">Journeys are best measured in new friends</a>
+                      <a href="#">Experience Uluguru mountains View at morogoro</a>
                    </h3>
                    <div class="entry-meta">
                       <span class="byline">
-                         <a href="#">Demoteam</a>
+                         <a href="#">Uluguru</a>
                       </span>
                       <span class="posted-on">
-                         <a href="#">August 17, 2021</a>
+                         <a href="#">February 24, 2024</a>
                       </span>
                       <span class="comments-link">
                          <a href="#">No Comments</a>

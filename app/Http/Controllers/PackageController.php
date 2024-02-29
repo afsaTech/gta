@@ -140,7 +140,7 @@ class PackageController extends Controller
 
         $isEdit = true;
 
-        return view('admin.packages.create-edit', compact(['package', 'isEdit']))->with('categories', $categories);
+        return view('admin.package.create-edit', compact(['package', 'isEdit']))->with('categories', $categories);
     }
 
     /**

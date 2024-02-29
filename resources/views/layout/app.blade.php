@@ -90,7 +90,7 @@
                   </h1>
                </div>
                <div class="main-navigation d-none d-lg-block">
-                  <nav id="navigation" class="navigation">
+               <!-- <nav id="navigation" class="navigation">
                      <ul>
                            <li class="menu-item"><a href="{{('#packages')}}">Packages</a></li>
                            <li class="menu-item"><a href="{{('#team')}}">Team</a></li>
@@ -138,7 +138,7 @@
                        @endguest --}}
                        {{-- Authntification menu End--}}
                      </ul>
-                  </nav>
+                  </nav> -->
                </div>
                <div class="header-btn">
                   <a href="#" class="button-primary">BOOK NOW</a>
@@ -264,20 +264,20 @@
                         </ul>
                      </div>
                   </div>
-                  <div class="col-md-2 text-center">
+                  {{-- <div class="col-md-2 text-center">
                      <div class="footer-logo">
-                        <a href="#"><img src="assets/images/travele-logo.png" alt=""></a>
+                        <a href="#"><img src="{{asset('gta/images/logo.png')}}" alt=""></a>
                      </div>
-                  </div>
-                  <div class="col-md-5">
-                     <div class="copy-right text-right">&copy; {{now()->year}} {{ str_replace("_"," ",config('app.name', 'Go Tanzania Adventure')) }}. All rights reserveds</div>
+                  </div> --}}
+                  <div class="col-md-7">
+                     <div class="copy-right text-right">&copy; {{now()->year}} {{ str_replace("_"," ",config('app.name', 'Go Tanzania Adventure')) }}. All rights reserveds | Developed By <a href="https://afsatech.co.tz" target="blank">afsaTech</a></div>
                   </div>
                </div>
             </div>
          </div>
       </footer>
-      <a id="backTotop" href="#" class="to-top-icon">
-         <i class="fas fa-chevron-up"></i>
+      <a href="#" id="backTotop"  class="to-top-icon">
+         <i style="margin-top:25%;" class="fas fa-chevron-up"></i>
       </a>
       <!-- custom search field html -->
       <div class="header-search-form">
