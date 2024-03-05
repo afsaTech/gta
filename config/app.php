@@ -16,7 +16,8 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    // 'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'GO TANZANIA ADVENTURE'),
 
     /*
     |--------------------------------------------------------------------------
@@ -139,6 +140,8 @@ return [
     |
     */
 
+    'storage' => env('APP_STORAGE', storage_path()),
+
     'maintenance' => [
         'driver' => 'file',
         // 'store'  => 'redis',
@@ -168,6 +171,11 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Spatie\Permission\PermissionServiceProvider::class,
+        Spatie\Html\HtmlServiceProvider::class,
+
+        Laravel\Socialite\SocialiteServiceProvider::class,
+
     ])->toArray(),
 
     /*
@@ -183,6 +191,8 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
+        'Html' => Spatie\Html\Facades\Html::class,
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
     ])->toArray(),
 
 ];

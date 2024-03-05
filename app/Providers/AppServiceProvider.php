@@ -2,9 +2,9 @@
 
 namespace App\Providers;
 
-use Illuminate\Pagination\Paginator;
-use Illuminate\Support\Facades\Blade;
+use App\Observers\GlobalObserver;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -21,19 +21,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //Enable Bootstrap Pagination on Go Tanzania Adventure
-        Paginator::useBootstrap();
+        Schema::defaultStringLength(191);
 
-        //Directive for formatting currency
-        Blade::directive('money',function($money){
-
-            return "<?php echo 'Tsh &nbsp;'.number_format($money, 2); ?>";
-        });
-
-        //Directive for Package description to show 250 words
-        Blade::directive('description',function($description){
-
-            return "<?php echo substr($description,0,250); ?>";
-        });
+        // Observe all models
+        $models = config('global-observer.models'); // Define models in the config
+        foreach ($models as $model) {
+            $model::observe(GlobalObserver::class);
+        }
     }
 }

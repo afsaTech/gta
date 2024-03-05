@@ -2,32 +2,43 @@
 
 namespace Database\Seeders;
 
+use App\Models\Packages\Category;
+use Carbon\Carbon;
+use Faker\Factory as Faker;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Support\Str;
 
 class CategorySeeder extends Seeder
 {
     /**
      * Run the database seeds.
+     *
+     * @return void
      */
-    public function run(): void{
+    public function run()
+    {
+        $faker = Faker::create();
 
-    $names=array("Adult","Child","Couple");
+        // Seed categories with sample data
+        for ($i = 1; $i <= 10; $i++) {
+            $name = $faker->word;
+            $slug = Str::slug($name);
 
-   
-    // Seed 3 Categories with sample data
-    // for ($i = 1; $i<=3; $i++) {
+            // Ensure slug uniqueness
+            $uniqueSlug = $slug;
+            $counter = 1;
+            while (Category::where('slug', $uniqueSlug)->exists()) {
+                $uniqueSlug = $slug . '-' . $counter;
+                $counter++;
+            }
 
-       foreach($names as $name){
-        DB::table('categories')->insert([
-            'name' =>$name , 
-            'created_at' => now(),
-        ]);
-       }
-        
-        
-    // }
+            Category::create([
+                'name' => $name,
+                'slug' => $uniqueSlug,
+                'description' => $faker->sentence,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
+            ]);
+        }
+    }
 }
-}
-
