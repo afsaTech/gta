@@ -11,7 +11,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $this->call(CreateAdminUserSeeder::class);
+        // \App\Models\User::factory(10)->create();
+
+        \App\Models\User::factory()->create([
+            'name' => 'Test User',
+            'email' => 'test@example.com',
+            'password'=>''
+        ]);
+
+
+        $this->call(PackageSeeder::class);
         $this->call(CategorySeeder::class);
         $this->call(PackageSeeder::class);
         $this->call(TopNotchDestinationSeeder::class);

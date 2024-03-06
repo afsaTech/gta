@@ -15,23 +15,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['namespace' => 'App\Http\Controllers\Frontend'], function () {
 
-    /* -----------------------------------------------
-     FRONT-END ROUTES
-    -------------------------------------------------*/
-    // First Page Routes
-    Route::get('/', 'WelcomeController@index')->name('welcome.index');
+/* -----------------------------------------------
+    GTA WEBSITE LANDING PAGE ROUTE 
+  -------------------------------------------------*/
 
-    // Package Routes
-    Route::get('/site/packages', 'PackageController@index')->name('site-packages.index');
-    Route::get('/site/packages/{package}', 'PackageController@show')->name('site-packages.show');
+Route::get('/', function () {
+  $latestPackages = Package::where('status', 'active')->where('is_popular', 'on')->take(3)->get();
 
-    // TopNotchDestination Routes
-    Route::get('/site/top-notch-destinations', 'TopNotchDestinationController@index')->name('top-notch-destinations.index');
-    Route::get('/site/top-notch-destinations/{package}', 'TopNotchDestinationController@show')->name('top-notch-destinations.show');
+  return view('welcome', compact(['latestPackages']));
 });
-
-
-Route::group(['namespace' => 'App\Http\Controllers\Backend\Auth'], function () {
 
     /* -----------------------------------------------
      AUTH ROUTES
@@ -107,38 +99,19 @@ Route::group(['namespace' => 'App\Http\Controllers\Backend\Dashboard'], function
                 });
 
 
-                /* -----------------------------------------------
-                 CONTENT MANAGEMENT ROUTES
-                 -------------------------------------------------*/
-                // Posts Routes
-                Route::resource('posts', 'PostController');
-                Route::delete('posts/{post}/delete', 'PostController@forceDelete')->name('posts.forceDelete');
+/* -----------------------------------------------
+      PACKAGE RESOURCE
+    -------------------------------------------------*/
+Route::resource('Packages', PackageController::class);
+Route::get('/admin/packages/{status}', [PackageController::class, 'show'])->name('packageStatus');
 
-                Route::group(['namespace' => 'Package'], function () {
+//Display admin Dashboard route
+Route::get('/admin/dashboard', [dashboardController::class, 'dashboard'])->name('dashboard');
 
-                    // Package Routes
-                    Route::resource('packages', 'PackageController');
-                    Route::delete('packages/{package}/delete', 'PackageController@forceDelete')->name('packages.forceDelete');
-                    
-                    // Category Routes
-                    Route::resource('categories', 'CategoryController');
-                    Route::delete('/categories/{category}/delete', 'CategoryController@forceDelete')->name('categories.forceDelete');
-
-                    // Package Images Routes
-                    Route::get('/package-images', 'ImageController@index')->name('package-images.index');
-                    Route::get('/package-images/create', 'ImageController@create')->name('package-images.create');
-                    Route::post('/package-images', 'ImageController@store')->name('package-images.store');
-                    Route::get('/package-images/{image}', 'ImageController@show')->name('package-images.show');
-                    Route::get('/package-images/{image}/edit', 'ImageController@edit')->name('package-images.edit');
-                    Route::patch('/package-images/{image}', 'ImageController@update')->name('package-images.update');
-                    Route::delete('/package-images/{image}', 'ImageController@destroy')->name('package-images.destroy');
-                    Route::delete('package-images/{image}/delete', 'ImageController@forceDelete')->name('package-images.forceDelete');
-                 });
-
-
-                // Top Notch Destinations Routes
-                Route::resource('top-notch-destinations', 'TopNotchDestinationController');
-                Route::delete('top-notch-destinations/{id}/delete', 'TopNotchDestinationController@forceDelete')->name('top-notch.forceDelete');
-            });
-    });
+Route::controller(loginController::class)->group(function () {
+  Route::get('/admin', 'login')->name('login');
+  Route::post('/authenticate', 'authenticate')->name('authenticate');
 });
+
+//GTA admin logout route.
+Route::post('/logout', [logoutController::class, 'logout'])->name('logout');
