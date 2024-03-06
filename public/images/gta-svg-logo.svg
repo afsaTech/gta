@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 50">
+    <style>
+    text {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use a common sans-serif font */
+      font-size: 15px;
+      font-weight: 500; 
+      fill: #F5F5F5; 
+      /* Set text color to white */
+      /* fill: #FFFF99;  */
+    }
+  </style>
+  <text x="50%" y="50%" font-family="'Roboto', sans-serif" font-size="15" font-weight="500"  dominant-baseline="middle" text-anchor="middle" lengthAdjust="spacingAndGlyphs" textLength="110">Go Tanzania Adventure</text>
+</svg>

@@ -1,0 +1,99 @@
+#remember {
+    display: none;
+}
+
+.input-group .form-control {
+    border-right: none;
+    border-radius: 0.375rem;
+    border-color: #a7a6a4b9;
+}
+
+.input-group-append .input-group-text {
+    background-color: #fff;
+    border-color: #a7a6a4b9;
+}
+
+/* Custom color style for #b98b40 */
+.card-custom-b98b40:not(.card-outline)>.card-header {
+    background-color: #b98b40;
+}
+
+.card-custom-b98b40:not(.card-outline)>.card-header,
+.card-custom-b98b40:not(.card-outline)>.card-header a {
+    color: #fff;
+}
+
+.card-custom-b98b40:not(.card-outline)>.card-header a.active {
+    color: #1f2d3d;
+}
+
+.card-custom-b98b40.card-outline {
+    border-top: 3px solid #b98b40;
+}
+
+.card-custom-b98b40.card-outline-tabs>.card-header a:hover {
+    border-top: 3px solid #dee2e6;
+}
+
+.card-custom-b98b40.card-outline-tabs>.card-header a.active,
+.card-custom-b98b40.card-outline-tabs>.card-header a.active:hover {
+    border-top: 3px solid #b98b40;
+}
+
+.bg-dark>.card-header .btn-tool,
+.bg-gradient-dark>.card-header .btn-tool,
+.card-custom-b98b40:not(.card-outline)>.card-header .btn-tool {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-dark>.card-header .btn-tool:hover,
+.bg-gradient-dark>.card-header .btn-tool:hover,
+.card-custom-b98b40:not(.card-outline)>.card-header .btn-tool:hover {
+    color: #fff;
+}
+
+
+.dark-mode .card-custom-b98b40:not(.card-outline)>.card-header {
+    background-color: #b98b40;
+}
+
+.dark-mode .card-custom-b98b40:not(.card-outline)>.card-header,
+.dark-mode .card-custom-b98b40:not(.card-outline)>.card-header a {
+    color: #fff;
+}
+
+.dark-mode .card-custom-b98b40:not(.card-outline)>.card-header a.active {
+    color: #1f2d3d;
+}
+
+.dark-mode .card-custom-b98b40.card-outline {
+    border-top: 3px solid #b98b40;
+}
+
+.dark-mode .card-custom-b98b40.card-outline-tabs>.card-header a:hover {
+    border-top: 3px solid #dee2e6;
+}
+
+.dark-mode .card-custom-b98b40.card-outline-tabs>.card-header a.active,
+.dark-mode .card-custom-b98b40.card-outline-tabs>.card-header a.active:hover {
+    border-top: 3px solid #b98b40;
+}
+
+.dark-mode .bg-dark>.card-header .btn-tool,
+.dark-mode .bg-gradient-dark>.card-header .btn-tool,
+.dark-mode .card-custom-b98b40:not(.card-outline)>.card-header .btn-tool {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.dark-mode .bg-dark>.card-header .btn-tool:hover,
+.dark-mode .bg-gradient-dark>.card-header .btn-tool:hover,
+.dark-mode .card-custom-b98b40:not(.card-outline)>.card-header .btn-tool:hover {
+    color: #fff;
+}
+
+.pull-bottom-end {
+    position: absolute;
+    bottom: 0;
+    border-bottom: none;
+    border-top: 1px solid #4f5962;
+}
